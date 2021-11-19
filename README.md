@@ -41,7 +41,7 @@ URL=https://api.translink.ca/rttiapi/v1/stops
 ```
 3. [Install expo](https://expo.dev)
 
-If you are interested in using the app, please visit this link: [exp://exp.host/@watshever/busProject](exp://exp.host/@watshever/busProject)
+If you are interested in using the app, please visit this link: [exp://exp.host/@watshever/busProject](https://exp.host/@watshever/busProject)
 
 
 ### Feature Backlog
