@@ -20,6 +20,18 @@ export default styles = StyleSheet.create({
     },
     flatListView: {
         height: 600,
-        margin: 20
+        margin: 20,
+    },
+    refresh: {
+        backgroundColor: 'blue',
+        padding: 10,
+        width: 100,
+        borderRadius: 10,
+        justifyContent: 'center',
+        backgroundColor: 'black'
+    },
+    menuView: {
+        justifyContent: 'center',
+        alignItems: 'center',
     }
 })

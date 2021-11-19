@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { Text, View, FlatList, SafeAreaView, ActivityIndicator } from 'react-native';
-import { getLocation, getStops } from '../hooks/BusHooks'
+import { Text, View, FlatList, SafeAreaView, TouchableOpacity, ActivityIndicator } from 'react-native';
+import { getLocation, getStops } from '../hooks/busHooks'
 import BusStop from './busComponents/BusStop';
 import styles from './styles';
 
@@ -11,7 +11,8 @@ export default function BusView() {
     const [latitude, setLatitude] = useState(49.258627)
     const [longitude, setLongitude] = useState(-123.210761)
     const [range, setRange] = useState(500)
-    const [isLoading, setIsLoading] = useState(true)
+    const [refresh, setRefresh] = useState(false)
+    const [isLoaded, setIsLoaded] = useState(false)
 
     // find nearest bus stops to current location 
     useEffect(() => {
@@ -23,9 +24,9 @@ export default function BusView() {
                 alert(err)
             }
         }
-        setIsLoading(false)
         retrieveStops()
-    }, [latitude, longitude])
+        setIsLoaded(true)
+    }, [latitude, longitude, busStops])
 
     // on start, retrieve location from the phone
     useEffect(() => {
@@ -39,7 +40,13 @@ export default function BusView() {
             }
         }
         retrieveLocation()
-    }, [])
+    }, [refresh])
+
+    const onRefresh = () => {
+        setBusStops([])
+        setIsLoaded(false)
+        setRefresh(!refresh)
+    }
 
     const renderItem = ({ item }) => (
         <BusStop stop={item}></BusStop>
@@ -47,12 +54,12 @@ export default function BusView() {
 
     return (
         <SafeAreaView style={styles.mainView}>
-                <View>
-                    <Text style={styles.headline}>Bus Schedule</Text>
-                    {isLoading && <ActivityIndicator style={{marginTop: 10}}size="large" color="#000000"/>}
+                <View style={styles.menuView}>
+                    <Text style={styles.headline}>Bus Schedule</Text> 
                 </View>
 
                 <View style={styles.flatListView}>
+                    {!isLoaded && <ActivityIndicator style={{marginTop: 10}}size="large" color="#000000"/>}
                     <FlatList
                         style={styles.flatList}
                         nestedScrollEnabled
@@ -61,6 +68,12 @@ export default function BusView() {
                         keyExtractor={stop => stop.StopNo.toString()}
                         renderItem={renderItem}
                     />
+                </View>
+
+                <View style={styles.menuView}>
+                    <TouchableOpacity style={styles.refresh} onPress={onRefresh}>
+                        <Text style={{ color: 'white' }}>Refresh All</Text>
+                    </TouchableOpacity>
                 </View>
         </SafeAreaView>
     )
