@@ -45,6 +45,7 @@ If you are interested in using the app, please visit this link: [exp://exp.host/
 
 
 ### Feature Backlog
+- [x] Refresh location
 - [ ] Slider for custom bus stop query radius
 - [ ] Improve UI and branding of app
 - [ ] Add in map to show location of bus stops
