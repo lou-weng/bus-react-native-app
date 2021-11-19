@@ -1,0 +1,67 @@
+[
+    {
+        "StopNo": 51596,
+        "Name": "WB W 16 AVE FS SASAMAT ST",
+        "BayNo": "N",
+        "City": "VANCOUVER",
+        "OnStreet": "W 16 AVE",
+        "AtStreet": "SASAMAT ST",
+        "Latitude": 49.258432,
+        "Longitude": -123.209780,
+        "WheelchairAccess": 1,
+        "Distance": 74,
+        "Routes": "025, 033"
+    },
+    {
+        "StopNo": 51487,
+        "Name": "EB W 16 AVE FS TOLMIE ST",
+        "BayNo": "N",
+        "City": "VANCOUVER",
+        "OnStreet": "W 16 AVE",
+        "AtStreet": "TOLMIE ST",
+        "Latitude": 49.258190,
+        "Longitude": -123.211850,
+        "WheelchairAccess": 0,
+        "Distance": 93,
+        "Routes": "025, 033"
+    },
+    {
+        "StopNo": 51597,
+        "Name": "WB W 16 AVE NS BLANCA ST",
+        "BayNo": "N",
+        "City": "VANCOUVER",
+        "OnStreet": "W 16 AVE",
+        "AtStreet": "BLANCA ST",
+        "Latitude": 49.258508,
+        "Longitude": -123.214570,
+        "WheelchairAccess": 1,
+        "Distance": 277,
+        "Routes": "025, 033"
+    },
+    {
+        "StopNo": 51486,
+        "Name": "EB W 16 AVE FS BLANCA ST",
+        "BayNo": "N",
+        "City": "VANCOUVER",
+        "OnStreet": "W 16 AVE",
+        "AtStreet": "BLANCA ST",
+        "Latitude": 49.258259,
+        "Longitude": -123.214903,
+        "WheelchairAccess": 0,
+        "Distance": 303,
+        "Routes": "025, 033"
+    },
+    {
+        "StopNo": 51488,
+        "Name": "EB W 16 AVE FS TRIMBLE ST",
+        "BayNo": "N",
+        "City": "VANCOUVER",
+        "OnStreet": "W 16 AVE",
+        "AtStreet": "TRIMBLE ST",
+        "Latitude": 49.258107,
+        "Longitude": -123.205776,
+        "WheelchairAccess": 0,
+        "Distance": 366,
+        "Routes": "025, 033"
+    }
+]
