@@ -59,7 +59,7 @@ export default function BusView() {
                 </View>
 
                 <View style={styles.flatListView}>
-                    {!isLoaded && <ActivityIndicator style={{marginTop: 10}}size="large" color="#000000"/>}
+                    {/* {!isLoaded && <ActivityIndicator style={{marginTop: 10}}size="large" color="#000000"/>} */}
                     <FlatList
                         style={styles.flatList}
                         nestedScrollEnabled

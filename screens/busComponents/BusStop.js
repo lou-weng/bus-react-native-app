@@ -53,7 +53,7 @@ export default function BusStop(props) {
 
             {isLoading && <ActivityIndicator style={{marginTop: 10}}size="large" color="#000000"/>}
             {clicked && 
-                <Text>Last Update: {moment().format('LTS')}</Text>
+                <Text>Last Update: {moment(time).format('LTS')}</Text>
             }
             {clicked && routes.map((route, index) => (
                 <BusRoute key={index} route={route}/>
