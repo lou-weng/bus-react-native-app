@@ -18,9 +18,9 @@ In Vancouver, you have the following options when looking at the arrival of buse
     Disadvantage: I personally hate opening apps that take longer than 5 seconds to start up. I also need to manually note down all my most used stops, or else I need to search for my desired route each time
 
 What I noticed was that there were no options that:
-1. quick to open and check bus arrival times.
+1. was quick to open to check bus arrival times.
 2. gave me a list of all buses around my current location.
-3. didn't use a lot of data to search for bus times.
+3. didn't use a lot of mobile data to search for bus times.
 
 ### Project Overview
 I decided to try my hand out at creating a React Native Android App that I could just pull out of my pocket whenever I needed to bus. 
